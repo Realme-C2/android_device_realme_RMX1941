@@ -65,6 +65,7 @@ ro.mtk_perf_response_time=1
 
 # Graphics
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+debug.cpurend.vsync=false
 
 # Camera 
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera 
