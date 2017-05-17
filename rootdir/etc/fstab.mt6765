@@ -87,4 +87,4 @@
 /dev/block/platform/bootdevice/by-name/vbmeta /vbmeta emmc defaults defaults
 
 # zRAM
-/dev/block/zram0 none swap defaults zramsize=2147483648
+/dev/block/zram0 none swap defaults zramsize=2147483648,max_comp_streams=8
