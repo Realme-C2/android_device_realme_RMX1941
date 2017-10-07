@@ -42,7 +42,8 @@ setup_vendor "$DEVICE" "$VENDOR" "$AOSP_ROOT"
 # Copyright headers and guards
 write_headers
 
-write_makefiles "$MY_DIR"/proprietary-files.txt
+# Device blobs
+write_makefiles "$MY_DIR"/proprietary-files.txt true
 
 # Finish
 write_footers
