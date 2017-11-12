@@ -37,6 +37,7 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.target.rc \
+    init.safailnet.rc \
     fstab.mt6765 
 
 # HIDL
