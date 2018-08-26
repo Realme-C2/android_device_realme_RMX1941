@@ -171,6 +171,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/keylayout/mtk-kpd.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/mtk-kpd.kl
 
 # Properties
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 -include $(DEVICE_PATH)/configs/mtk_services_log.mk
 
 # Inherit Device Vendor
