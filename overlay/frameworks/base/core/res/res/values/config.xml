@@ -401,6 +401,8 @@
         V 0
         Z
 
+    </string>
+
     <!-- Device configuration indicating whether we should avoid using accelerated graphics
          in certain places to reduce RAM footprint.  This is ignored if ro.config.low_ram
          is true (in that case this is assumed true as well).  It can allow you to tune down
@@ -408,5 +410,7 @@
          off features. -->
     <bool name="config_avoidGfxAccel">true</bool>
 
-    </string>
+    <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
+    <bool name="config_zramWriteback">true</bool>
+
 </resources>
