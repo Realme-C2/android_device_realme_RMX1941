@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# Boot
+PRODUCT_PRODUCT_PROPERTIES += \
+    sys.vendor.shutdown.waittime=500
+
 # Charger
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.charger.enable_suspend=true
