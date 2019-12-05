@@ -86,5 +86,9 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-base \
     mediatek-telephony-common    
 
+# RcsService
+PRODUCT_PACKAGES += \
+    RcsService
+
 # Inherit Device Vendor
 $(call inherit-product, vendor/realme/RMX1941/RMX1941-vendor.mk)
