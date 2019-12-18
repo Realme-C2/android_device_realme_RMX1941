@@ -233,7 +233,25 @@
      <bool name="skip_restoring_network_selection">false</bool>
 
     <!-- Height of the status bar -->
-     <dimen name="status_bar_height_portrait">32.0dip</dimen>
+     <dimen name="status_bar_height_portrait">31.0dip</dimen>
+
+    <!-- Height of the status bar in landscape -->
+    <dimen name="status_bar_height_landscape">28.0dp</dimen>
+
+    <!-- The status bar padding before and after icons -->
+    <dimen name="rounded_corner_content_padding">12dp</dimen>
+    <dimen name="rounded_corner_content_padding_alt">12dp</dimen>
+
+    <!-- Default radius of the software rounded corners. -->
+    <dimen name="rounded_corner_radius">36dp</dimen>
+
+    <!-- Radius of the software rounded corners at the top of the display in its natural
+        orientation. If zero, the value of rounded_corner_radius is used. -->
+    <dimen name="rounded_corner_radius_top">108px</dimen>
+
+    <!-- Radius of the software rounded corners at the bottom of the display in its natural
+        orientation. If zero, the value of rounded_corner_radius is used. -->
+    <dimen name="rounded_corner_radius_bottom">108px</dimen>
 
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
@@ -387,7 +405,6 @@
         <item>1,1</item>
         <item>0,1</item>
     </string-array>
-
     <!-- Like config_mainBuiltInDisplayCutout, but this path is used to report the
          one single bounding rect per device edge to the app via
          {@link DisplayCutout#getBoundingRect}. Note that this path should try to match the visual
