@@ -86,6 +86,21 @@ ro.lmk.psi_complete_stall_ms=200
 ro.lmk.thrashing_limit=30 
 ro.lmk.swap_util_max=100
 
+# Memory Management
+ro.sys.fw.bservice_enable=true 
+ro.sys.fw.bservice_limit=5 
+ro.sys.fw.bservice_age=5000 
+ro.am.reschedule_service=true 
+ro.config.fha_enable=true 
+ro.sys.fw.bg_apps_limit=32 
+ro.config.dha_cached_max=16 
+ro.config.dha_empty_max=42 
+ro.config.dha_empty_init=32 
+ro.config.dha_lmk_scale=0.545 
+ro.config.dha_th_rate=2.3 
+ro.config.sdha_apps_bg_max=64 
+ro.config.sdha_apps_bg_min=8
+
 # WFD
 persist.sys.wfd.nohdcp=1 
 persist.debug.wfd.enable=1 
