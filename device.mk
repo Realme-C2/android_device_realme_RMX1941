@@ -136,6 +136,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
 
+# WiFi
+PRODUCT_PACKAGES += \
+    WifiOverlay
+
 # Privapp-permissions whitelist for ImsService
 PRODUCT_COPY_FILES += \
        $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:system/etc/permissions/privapp-permissions-com.mediatek.ims.xml
