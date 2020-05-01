@@ -400,7 +400,6 @@
         H 85
         V 0
         Z
-
     </string>
 
     <!-- Device configuration indicating whether we should avoid using accelerated graphics
@@ -412,5 +411,11 @@
 
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
     <bool name="config_zramWriteback">true</bool>
+
+    <!-- The list of components which should be automatically disabled for a specific device. -->
+    <string-array name="config_disabledComponents" translatable="false">
+        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+        <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
+    </string-array>
 
 </resources>
