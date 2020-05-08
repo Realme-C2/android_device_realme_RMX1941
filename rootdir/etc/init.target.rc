@@ -57,3 +57,5 @@ on post-fs
 on property:sys.boot_completed=1
     # Enable ZRAM
     swapon_all /system/etc/fstab.mt6765
+    #Reinit lmkd to reconfigure lmkd properties
+    setprop lmkd.reinit 1
