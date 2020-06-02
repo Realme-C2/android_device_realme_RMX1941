@@ -170,6 +170,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/keylayout/ACCDET.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/ACCDET.kl \
     $(DEVICE_PATH)/configs/keylayout/mtk-kpd.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/mtk-kpd.kl
 
+# DT2W
+PRODUCT_PACKAGES += \
+    DT2W-Service-RMX1941
+
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 -include $(DEVICE_PATH)/configs/mtk_services_log.mk
