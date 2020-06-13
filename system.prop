@@ -37,6 +37,7 @@ dalvik.vm.image-dex2oat-threads=8
 
 # Zygote preforking
 persist.device_config.runtime_native.usap_pool_enabled=true
+persist.device_config.runtime_native.usap_pool_size_max=5
 
 # SurfaceFlinger
 debug.sf.disable_backpressure=1 
