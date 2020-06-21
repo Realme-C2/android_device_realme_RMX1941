@@ -14,7 +14,11 @@
 # limitations under the License.
 #
 
+ifeq (eng,$(TARGET_BUILD_VARIANT))
 VENDOR_LOG_LEVEL=I
+else
+VENDOR_LOG_LEVEL=S
+endif
 
 # MTK services log level
 PRODUCT_PRODUCT_PROPERTIES += \
