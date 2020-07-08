@@ -89,6 +89,7 @@ persist.dbg.wfc_avail_ovr=1
 
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
+debug.stagefright.ccodec=0
 
 # Zram-writeback
 ro.zram.mark_idle_delay_mins=60
