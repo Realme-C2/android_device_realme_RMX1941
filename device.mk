@@ -90,6 +90,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshim_showlogo
 
+# Overlays -- replace official
+PRODUCT_PACKAGES += \
+    FrameworkResOverlay
+
 # Screen density
 PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
