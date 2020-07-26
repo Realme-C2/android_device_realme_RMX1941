@@ -40,8 +40,12 @@ on charger
     write /sys/power/pm_async 0
 
 on post-fs
-    # Override vendor fstab again because things like Magisk will re-bind /vendor
-    mount none /system/etc/fstab.mt6765 /vendor/etc/fstab.mt6765 bind
+    # Unmount the overridden fstab because the SELinux label is incorrect
+    # and some MTK daemons can crash because of that
+    # (at post-fs, the fstab has already been used to mount the partitions,
+    #  so it is fine to just revert back)
+    umount /vendor/etc/fstab.mt6765
+
 
     # Disable OEM Lights
     mount none /dev/null vendor/lib/hw/lights.mt6765.so bind
