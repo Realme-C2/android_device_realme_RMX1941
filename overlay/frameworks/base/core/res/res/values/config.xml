@@ -39,12 +39,6 @@
     <!-- Whether camera shutter sound is forced or not  (country specific). -->
      <bool name="config_camera_sound_forced">false</bool>
 
-    <!-- Flag specifying whether VoLTE should be available for carrier: independent of
-         carrier provisioning. If false: hard disabled. If true: then depends on carrier
-         provisioning, availability etc -->
-     <bool name="config_carrier_volte_available">false</bool>
-     <bool name="config_carrier_volte_tty_supported">true</bool>
-
     <!-- Flag specifying whether WFC over IMS should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
          provisioning, availability etc -->
@@ -54,10 +48,13 @@
      <bool name="config_cellBroadcastAppLinks">false</bool>
 
     <!-- Flag specifying whether VoLTE is available on device -->
-     <bool name="config_device_volte_available">false</bool>
+     <bool name="config_device_volte_available">true</bool>
 
     <!-- Flag specifying whether VT is available on device -->
-     <bool name="config_device_vt_available">false</bool>
+     <bool name="config_device_vt_available">true</bool>
+
+    <!-- ImsService package name to bind to by default, if config_dynamic_bind_ims is true -->
+    <string name="config_ims_package">com.mediatek.ims</string>
 
     <!-- Flag specifying whether WFC over IMS is available on device -->
      <bool name="config_device_wfc_ims_available">false</bool>
@@ -72,8 +69,7 @@
      <bool name="config_dozeAlwaysOnEnabled">true</bool>
 
     <!-- Flag specifying whether or not IMS will use the ImsResolver dynamically -->
-     <bool name="config_dynamic_bind_ims">false</bool>
-     <bool name="config_eap_sim_based_auth_supported">true</bool>
+     <bool name="config_dynamic_bind_ims">true</bool>
 
     <!--  Whether Multiuser UI should be shown -->
      <bool name="config_enableMultiUserUI">false</bool>
@@ -411,5 +407,5 @@
         V 0
         Z
     </string>
-     
+
 </resources>

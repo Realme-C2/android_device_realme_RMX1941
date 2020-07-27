@@ -71,5 +71,15 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.RMX1941
 
+# Telephony Jars
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common    
+
 # Inherit Device Vendor
 $(call inherit-product, vendor/realme/RMX1941/RMX1941-vendor.mk)

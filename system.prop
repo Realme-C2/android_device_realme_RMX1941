@@ -81,3 +81,8 @@ ro.lmk.swap_util_max=100
 persist.sys.wfd.nohdcp=1 
 persist.debug.wfd.enable=1 
 persist.sys.wfd.virtual=0
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
