@@ -1,4 +1,4 @@
-package co.potatoproject.dt2w.RMX1941;
+package org.pe.dt2w.RMX1941;
 
 import android.app.Service;
 import android.content.ContentResolver;
