@@ -113,5 +113,9 @@ PRODUCT_PACKAGES += com.android.tethering.inprocess
 PRODUCT_PACKAGES += \
     GoogleCameraGo
 
+# Tethering
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay
+
 # Inherit Device Vendor
 $(call inherit-product, vendor/realme/RMX1941/RMX1941-vendor.mk)
