@@ -51,6 +51,9 @@ TARGET_USES_HWC2 := true
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
