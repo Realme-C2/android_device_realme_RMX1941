@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
-
+	
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
@@ -57,6 +57,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsuspend \
     android.hardware.health@2.0
+
+# Permissions
+PRODUCT_COPY_FILES := \
+	$(DEVICE_PATH)/permissions/com.mediatek.op.ims.common.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.mediatek.op.ims.common.xml \
+	$(DEVICE_PATH)/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
 
 # Symbols
 PRODUCT_PACKAGES += \
