@@ -54,5 +54,8 @@ on post-fs
     # Audio Policy
     mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
 
+    # Camera 
+    setprop oppo.camera.packname com.oppo.camera
+
 on property:sys.boot_completed=1
     start ktweak
