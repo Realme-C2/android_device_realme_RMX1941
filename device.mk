@@ -44,6 +44,11 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor    
 
+# Dependencies of kpoc_charger
+PRODUCT_PACKAGES += \
+    libsuspend \
+    android.hardware.health@2.0
+
 # Symbols
 PRODUCT_PACKAGES += \
     libshim_showlogo
