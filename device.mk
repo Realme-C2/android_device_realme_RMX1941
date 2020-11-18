@@ -124,6 +124,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     ImsServiceBase
 
+# ImsInit hack
+PRODUCT_PACKAGES += \
+    ImsInit
+
 # RcsService
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
