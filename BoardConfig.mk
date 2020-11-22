@@ -43,6 +43,7 @@ ENABLE_SCHEDBOOST := true
 
 # Display
 TARGET_USES_HWC2 := true
+TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user androidboot.selinux=permissive
