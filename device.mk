@@ -92,6 +92,8 @@ PRODUCT_BOOT_JARS += \
 
 # RcsService
 PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
     RcsService
 
 # Inherit Device Vendor
