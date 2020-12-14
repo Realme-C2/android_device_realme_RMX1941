@@ -76,6 +76,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.lmk.use_minfree_levels=true \
     ro.lmk.enhance_batch_kill=true \
     ro.lmk.vmpressure_file_min=80640 \
-    ro.lmk.log_stats=true
+    ro.lmk.log_stats=true \
+    ro.lmk.use_psi=true \
+    ro.lmk.psi_complete_stall_ms=200 \
+    ro.lmk.thrashing_limit=30 \
+    ro.lmk.swap_util_max=100
 
 
