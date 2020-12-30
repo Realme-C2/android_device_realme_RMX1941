@@ -44,9 +44,11 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor    
 
+# Symbols
+PRODUCT_PACKAGES += \
+    libshim_showlogo
+
 # Screen density
 PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
-
-
