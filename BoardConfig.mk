@@ -113,6 +113,9 @@ TARGET_COPY_OUT_PRODUCT := system/product
 TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
 TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := /proc/touchpanel/double_tap_enable
+
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := false
 TARGET_NO_RECOVERY := false
