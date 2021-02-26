@@ -109,5 +109,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += InProcessNetworkStack
 PRODUCT_PACKAGES += com.android.tethering.inprocess
 
+# GCamGO
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
+
 # Inherit Device Vendor
 $(call inherit-product, vendor/realme/RMX1941/RMX1941-vendor.mk)
