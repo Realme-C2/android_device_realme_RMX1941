@@ -43,7 +43,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.target.rc \
     init.safailnet.rc \
-    fstab.mt6765 
+    fstab.mt6765 \
+    ktweak.sh
 
 # HIDL
 PRODUCT_PACKAGES += \
