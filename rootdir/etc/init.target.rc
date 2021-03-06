@@ -15,6 +15,13 @@ service charger /system/bin/charger
     capabilities SYS_BOOT
     seclabel u:r:charger:s0
 
+service ktweak /vendor/bin/sh /system/etc/init/ktweak.sh
+    class late_start
+    disabled
+    user root
+    group system
+    oneshot
+
 on charger
     # Turn backlight on and switch to backlight trigger
     write /sys/class/leds/lcd-backlight/brightness "1000"
@@ -43,3 +50,6 @@ on post-fs
     mount none /dev/null vendor/lib64/hw/lights.mt6765.so bind
     mount none /dev/null vendor/lib64/hw/android.hardware.light@2.0-impl-mediatek.so bind
     mount none /dev/null vendor/etc/init/android.hardware.light@2.0-service-mediatek.rc bind
+
+on property:sys.boot_completed=1
+    start ktweak
