@@ -42,16 +42,22 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
     ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000 \
     debug.sf.latch_unsignaled=1 \
-    debug.sf.early_app_phase_offset_ns=1500000
-    debug.sf.early_gl_phase_offset_ns=3000000
-    debug.sf.early_gl_app_phase_offset_ns=15000000
-    debug.sf.early_phase_offset_ns=1500000
+    debug.sf.early_app_phase_offset_ns=1500000 \
+    debug.sf.early_gl_phase_offset_ns=3000000 \
+    debug.sf.early_gl_app_phase_offset_ns=15000000 \
+    debug.sf.early_phase_offset_ns=1500000 
 
 # MTK Performance
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.mtk_perf_simple_start_win=1 \
     ro.mtk_perf_fast_start_win=1 \
     ro.mtk_perf_response_time=1
+
+# Camera 
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera \
+    vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,com.discord
 
 
 
