@@ -64,3 +64,6 @@ PRODUCT_PACKAGES += \
 
 # Properties
 -include $(DEVICE_PATH)/properties.mk
+
+# Inherit Device Vendor
+$(call inherit-product, vendor/realme/RMX1941/RMX1941-vendor.mk)
