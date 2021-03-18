@@ -35,3 +35,5 @@ PRODUCT_MODEL := Realme C2
 PRODUCT_MANUFACTURER := realme
 PRODUCT_RELEASE_NAME := Realme C2
 
+# Build FP
+BUILD_FINGERPRINT := "google/sunfish/sunfish:11/RQ2A.210305.006/7119741:user/release-keys"
