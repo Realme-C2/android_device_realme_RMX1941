@@ -47,3 +47,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.early_gl_app_phase_offset_ns=15000000
     debug.sf.early_phase_offset_ns=1500000
 
+# MTK Performance
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.mtk_perf_simple_start_win=1 \
+    ro.mtk_perf_fast_start_win=1 \
+    ro.mtk_perf_response_time=1
+
+
+
