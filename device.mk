@@ -22,6 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
