@@ -120,6 +120,9 @@ SELINUX_IGNORE_NEVERALLOWS := true
 BOARD_VNDK_VERSION := current
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
+# System Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # AVB
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag

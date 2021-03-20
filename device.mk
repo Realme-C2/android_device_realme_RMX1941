@@ -71,8 +71,5 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.RMX1941
 
-# Properties
--include $(DEVICE_PATH)/properties.mk
-
 # Inherit Device Vendor
 $(call inherit-product, vendor/realme/RMX1941/RMX1941-vendor.mk)
