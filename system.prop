@@ -77,4 +77,7 @@ ro.lmk.psi_complete_stall_ms=200
 ro.lmk.thrashing_limit=30 
 ro.lmk.swap_util_max=100
 
-
+# WFD
+persist.sys.wfd.nohdcp=1 
+persist.debug.wfd.enable=1 
+persist.sys.wfd.virtual=0
