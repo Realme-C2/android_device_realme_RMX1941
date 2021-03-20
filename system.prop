@@ -20,6 +20,9 @@ sys.vendor.shutdown.waittime=500
 # Charger
 ro.charger.enable_suspend=true
 
+# Camera
+persist.camera.HAL3.enabled=1
+
 # Dex
 dalvik.vm.dex2oat64.enabled=true 
 ro.vendor.qti.am.reschedule_service=true 
