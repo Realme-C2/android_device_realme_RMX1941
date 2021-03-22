@@ -90,6 +90,7 @@ ro.lmk.use_psi=true
 ro.lmk.psi_complete_stall_ms=200 
 ro.lmk.thrashing_limit=30 
 ro.lmk.swap_util_max=100
+ro.config.low_ram2g=true
 
 # Memory Management
 ro.sys.fw.bservice_enable=true 
