@@ -61,3 +61,6 @@ on property:sys.boot_completed=1
     swapon_all /system/etc/fstab.mt6765
     #Reinit lmkd to reconfigure lmkd properties
     setprop lmkd.reinit 1
+    # Restrict permissions to socket file 
+    # to hide Magisk & co.
+    chmod 440 /proc/net/unix
