@@ -48,3 +48,22 @@ lib/libsink.so|00e2ec0cc399e5411ffa35dbfc0d0d3c17ecc7df
 lib/libsource.so|0e01c6c5d76e21629463d1f94d28d1b8f91c4c30
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so|ecb6326c2a040b930a6bfc744ca761b7856154cd
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|5ed11753481998f26a6e39a9bd270dac3f0da46f
+
+# Trustonic TEE
+lib/libMcRegistry.so
+lib/libTeeClient.so
+lib/libTeeServiceJni.so
+lib/libteeservice_client.trustonic.so
+lib/vendor.trustonic.tee@1.0.so
+lib/vendor.trustonic.teeregistry@1.0.so
+lib64/libMcRegistry.so
+lib64/libTeeClient.so
+lib64/libTeeServiceJni.so
+lib64/libteeservice_client.trustonic.so
+lib64/vendor.trustonic.tee@1.0.so
+lib64/vendor.trustonic.teeregistry@1.0.so
+-priv-app/TeeService/TeeService.apk
+priv-app/TeeService/lib/arm64/libTeeServiceJni.so
+
+# Soter
+-app/SoterService/SoterService.apk
