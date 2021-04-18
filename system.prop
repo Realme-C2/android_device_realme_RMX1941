@@ -18,6 +18,7 @@
 ro.camera.sound.forced=0
 ro.audio.silent=0
 ro.zygote.preload.enable=0
+ro.config.vc_call_vol_steps=6
 
 # Boot
 sys.vendor.shutdown.waittime=500
