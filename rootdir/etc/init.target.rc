@@ -36,10 +36,6 @@ on charger
 
     write /sys/power/pm_async 0
 
-on fs
-    mount_all /vendor/etc/fstab.mt6765 --early
-    mount_all /vendor/etc/fstab.mt6765 --late
-
 on post-fs
     # Unmount the overridden fstab because the SELinux label is incorrect
     # and some MTK daemons can crash because of that
