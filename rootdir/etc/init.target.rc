@@ -47,9 +47,6 @@ on post-fs
     mount none /dev/null vendor/lib64/hw/android.hardware.light@2.0-impl-mediatek.so bind
     mount none /dev/null vendor/etc/init/android.hardware.light@2.0-service-mediatek.rc bind
 
-    # Audio Policy
-    mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
-
     # Camera 
     setprop oppo.camera.packname com.oppo.camera
 

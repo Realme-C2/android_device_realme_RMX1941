@@ -66,7 +66,7 @@ PRODUCT_COPY_FILES := \
 
 # Audio 
 PRODUCT_COPY_FILES := \
-    $(DEVICE_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml \
+    $(DEVICE_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_EXTRA_VNDK_VERSIONS)/etc/audio_policy_configuration.xml \
 
 # APNs
 PRODUCT_COPY_FILES += \
