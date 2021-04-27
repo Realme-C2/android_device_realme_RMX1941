@@ -121,7 +121,7 @@ PRODUCT_PACKAGES += com.android.tethering.inprocess
 
 # GCamGO
 PRODUCT_PACKAGES += \
-    GoogleCameraGo
+    CameraGo
 
 # Tethering
 PRODUCT_PACKAGES += \
