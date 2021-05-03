@@ -145,7 +145,3 @@ ro.sys.usb.charging.only=yes
 
 # LCD
 ro.sf.lcd_density=480
-
-# Permissions
-ro.control_privapp_permissions=log
-
