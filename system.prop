@@ -73,8 +73,8 @@ vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,co
 
 # LMKD
 ro.lmk.low=1001 
-ro.lmk.medium=0 
-ro.lmk.critical=800  
+ro.lmk.medium=800
+ro.lmk.critical=0  
 ro.lmk.critical_upgrade=false 
 ro.lmk.upgrade_pressure=100 
 ro.lmk.downgrade_pressure=100 
