@@ -140,5 +140,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
        $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:system/etc/permissions/privapp-permissions-com.mediatek.ims.xml
 
+# Input/DT2W
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keylayout/touchpanel.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/touchpanel.kl \
+    $(LOCAL_PATH)/configs/keylayout/ACCDET.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/ACCDET.kl \
+    $(LOCAL_PATH)/configs/keylayout/mtk-kpd.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/mtk-kpd.kl
+
 # Inherit Device Vendor
 $(call inherit-product, vendor/realme/RMX1941/RMX1941-vendor.mk)

@@ -19,6 +19,22 @@ service charger /system/bin/charger
     group system graphics input
     capabilities SYS_BOOT
     seclabel u:r:charger:s0
+	
+on boot
+
+    # Touchscreen/DT2W
+    chown system system /proc/touchpanel/double_tap_enable
+    chown 0660 /proc/touchpanel/double_tap_enable
+    write /proc/touchpanel/double_tap_enable 1
+
+    # Disable edge limit control interface
+    write /proc/touchpanel/oppo_tp_limit_enable 0
+
+    # Enable oppo touchpanel direction
+    write /proc/touchpanel/oppo_tp_direction 1
+
+    # Update touchscreen firmware
+    write /proc/touchpanel/tp_fw_update 1
 
 on charger
     # Turn backlight on and switch to backlight trigger
