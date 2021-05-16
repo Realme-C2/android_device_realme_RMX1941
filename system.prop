@@ -148,3 +148,6 @@ ro.sys.usb.charging.only=yes
 
 # LCD
 ro.sf.lcd_density=480
+
+# Navigation Bar
+qemu.hw.mainkeys=0
