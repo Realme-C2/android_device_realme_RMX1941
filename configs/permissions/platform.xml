@@ -255,8 +255,6 @@
     <allow-in-power-save package="com.android.cellbroadcastreceiver.module" />
     <allow-in-power-save package="com.android.cellbroadcastreceiver" />
     <allow-in-power-save package="com.android.shell" />
-    <!-- fix sound channels in calls (stop unloading treble-app) -->
-    <allow-in-power-save package="me.phh.treble.app" />
 
     <!-- Whitelist system providers -->
     <allow-in-power-save-except-idle package="com.android.providers.calendar" />
@@ -272,4 +270,6 @@
 
     <!-- These are the packages that shouldn't run as system user -->
     <system-user-blacklisted-app package="com.android.wallpaper.livepicker" />
+
+    <allow-in-power-save package="com.google.android.gms"/>
 </permissions>
