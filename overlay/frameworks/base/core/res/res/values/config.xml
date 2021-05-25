@@ -215,16 +215,11 @@
     <!-- The restoring is handled by modem if it is true-->
      <bool name="skip_restoring_network_selection">false</bool>
 
-    <!-- Height of the status bar -->
-    <dimen name="status_bar_height">24dp</dimen>
-    <dimen name="status_bar_height_portrait">24dp</dimen>
+ <!-- Height of the status bar -->
+    <dimen name="status_bar_height_portrait">24.0dip</dimen>
 
     <!-- Height of the status bar in landscape -->
-    <dimen name="status_bar_height_landscape">24dp</dimen>
-
-    <!-- The status bar padding before and after icons -->
-    <dimen name="rounded_corner_content_padding">12dp</dimen>
-    <dimen name="rounded_corner_content_padding_alt">12dp</dimen>
+    <dimen name="status_bar_height_landscape">24.0dip</dimen>
 
     <!-- Default radius of the software rounded corners. -->
     <dimen name="rounded_corner_radius">10.0px</dimen>
