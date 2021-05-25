@@ -150,16 +150,16 @@ PRODUCT_PACKAGES += \
 
 # Privapp-permissions whitelist
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-mediatek.xml:system/etc/permissions/privapp-permissions-mediatek.xml \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.android.launcher3.xml:system/system_ext/etc/permissions/privapp-permissions-com.android.launcher3.xml \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-oppo.xml:system/system_ext/etc/permissions/privapp-permissions-oppo.xml \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:system/etc/permissions/privapp-permissions-com.mediatek.ims.xml 
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-mediatek.xml:system/etc/permissions/privapp-permissions-mediatek.xml \
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.android.launcher3.xml:system/system_ext/etc/permissions/privapp-permissions-com.android.launcher3.xml \
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-oppo.xml:system/system_ext/etc/permissions/privapp-permissions-oppo.xml \
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:system/etc/permissions/privapp-permissions-com.mediatek.ims.xml 
 	
 # Input/DT2W
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/keylayout/touchpanel.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/touchpanel.kl \
-    $(LOCAL_PATH)/configs/keylayout/ACCDET.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/ACCDET.kl \
-    $(LOCAL_PATH)/configs/keylayout/mtk-kpd.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/mtk-kpd.kl
+    $(DEVICE_PATH)/configs/keylayout/touchpanel.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/touchpanel.kl \
+    $(DEVICE_PATH)/configs/keylayout/ACCDET.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/ACCDET.kl \
+    $(DEVICE_PATH)/configs/keylayout/mtk-kpd.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/mtk-kpd.kl
 
 # Properties
 -include $(DEVICE_PATH)/configs/mtk_services_log.mk
