@@ -216,21 +216,21 @@
      <bool name="skip_restoring_network_selection">false</bool>
 
  <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">24.0dip</dimen>
+    <dimen name="status_bar_height_portrait">30.0dip</dimen>
 
     <!-- Height of the status bar in landscape -->
-    <dimen name="status_bar_height_landscape">24.0dip</dimen>
+    <dimen name="status_bar_height_landscape">30.0dip</dimen>
 
     <!-- Default radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">10.0px</dimen>
+    <dimen name="rounded_corner_radius">12.0px</dimen>
 
     <!-- Radius of the software rounded corners at the top of the display in its natural
         orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_top">10.0px</dimen>
+    <dimen name="rounded_corner_radius_top">12.0px</dimen>
 
     <!-- Radius of the software rounded corners at the bottom of the display in its natural
         orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_bottom">10.0px</dimen>
+    <dimen name="rounded_corner_radius_bottom">12.0px</dimen>
 
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
