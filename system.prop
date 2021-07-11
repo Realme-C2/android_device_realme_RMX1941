@@ -157,3 +157,7 @@ ro.sys.usb.charging.only=yes
 
 # Navigation Bar
 qemu.hw.mainkeys=0
+
+# Iorap
+iorapd.perfetto.enable=true
+iorapd.readahead.enable=true
