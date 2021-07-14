@@ -149,9 +149,6 @@ do
 	# Disable I/O statistics accounting
 	write "$queue/iostats" 0
 
-	# Reduce heuristic read-ahead in exchange for I/O latency
-	write "$queue/read_ahead_kb" 128
-
 	# Reduce the maximum number of I/O requests in exchange for latency
 	write "$queue/nr_requests" 64
 done
