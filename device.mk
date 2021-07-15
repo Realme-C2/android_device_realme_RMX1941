@@ -90,10 +90,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshim_showlogo
 
-# Power
-PRODUCT_PACKAGES += \
-    power.mt6765
-
 # Overlays -- replace official
 PRODUCT_PACKAGES += \
     FrameworkResOverlay
