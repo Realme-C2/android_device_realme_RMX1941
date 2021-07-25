@@ -67,3 +67,7 @@ priv-app/TeeService/lib/arm64/libTeeServiceJni.so
 
 # Soter
 -app/SoterService/SoterService.apk
+
+# Mtk FM Radio
+-product/lib/libfmjni.so
+-product/lib64/libfmjni.so

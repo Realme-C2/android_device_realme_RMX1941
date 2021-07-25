@@ -180,3 +180,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Inherit Device Vendor
 $(call inherit-product, vendor/realme/RMX1941/RMX1941-vendor.mk)
+
+# MediaTek FMRadio
+PRODUCT_PACKAGES += \
+    FMRadio
