@@ -134,3 +134,6 @@ on property:sys.boot_completed=1
     # to hide Magisk & co.
     chmod 440 /proc/net/unix
     start ktweak
+
+on property:persist.vendor.radio.port_index=""
+    setprop sys.usb.config adb
