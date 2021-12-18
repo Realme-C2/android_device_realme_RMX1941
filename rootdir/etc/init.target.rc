@@ -13,6 +13,8 @@ on init
     write /proc/sys/vm/swappiness 100
     write /proc/sys/vm/vfs_cache_pressure 100
 
+    stop console
+
    # DT2W
     chown system input /dev/input/event0
     chown system input /dev/input/event1
