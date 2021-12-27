@@ -144,10 +144,6 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 # for gms modules.
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 
-# GCamGO
-PRODUCT_PACKAGES += \
-    CameraGo
-
 # Tethering
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
