@@ -22,6 +22,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# GcamGO
+$(call inherit-product, packages/apps/CameraGo/Android.mk)
+
+# Realme MTK-IMS
+$(call inherit-product, vendor/realme-ims/realme-ims-vendor.mk)
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
