@@ -138,6 +138,7 @@ LOCAL_PROPRIETARY_MODULE := true
 
 # System Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # AVB
 BOARD_AVB_ENABLE := true
