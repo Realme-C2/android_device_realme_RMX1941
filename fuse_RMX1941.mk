@@ -24,8 +24,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
-# Inherit some common Aosp stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common FusionOS stuff
+$(call inherit-product, vendor/fuse/config/common.mk)
 
 # Inherit from RMX1941 device makefile
 $(call inherit-product, device/realme/RMX1941/device.mk)
@@ -36,7 +36,7 @@ TARGET_SCREEN_WIDTH := 720
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX1941
-PRODUCT_NAME := aosp_RMX1941
+PRODUCT_NAME := fuse_RMX1941
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme C2
 PRODUCT_MANUFACTURER := realme
